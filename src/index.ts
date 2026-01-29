@@ -1,10 +1,13 @@
-console.log("Hello World")
-
-import { User } from "./User"
-import { Compangnie } from "./Compagnie"
+import { Compagnie } from "./Compagnie.ts";
+import { User } from "./User.ts";
+import { CustomMap } from "./CustomMap.ts";
 
 const user = new User();
-const comp = new Compangnie();
+const comp = new Compagnie();
+const map = new CustomMap();
 
-console.log(user)
-console.log(comp)
+console.log(user);
+console.log(comp);
+
+map.addMarker(user);
+map.addMarker(comp);
