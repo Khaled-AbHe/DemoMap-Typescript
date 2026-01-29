@@ -10,8 +10,8 @@ export class CustomMap {
 
     private googleMap = google.maps.Map;
 
-    constructor() {
-        this.googleMap = google.maps.Map(document.getElementById("map") as HTMLElement, {
+    constructor(divID: string) {
+        this.googleMap = google.maps.Map(document.getElementById(divID) as HTMLElement, {
             zoom: 1,
             center: {
                 lat: 0,

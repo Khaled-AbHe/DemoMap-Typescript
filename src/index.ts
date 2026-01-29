@@ -4,7 +4,7 @@ import { CustomMap } from "./CustomMap.ts";
 
 const user = new User();
 const comp = new Compagnie();
-const map = new CustomMap();
+const map = new CustomMap("map");
 
 console.log(user);
 console.log(comp);
